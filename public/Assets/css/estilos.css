@@ -1,0 +1,102 @@
+body{
+    background-image: url(../img/fondo.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.main-section{
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 0;
+}
+/*CAJA*/
+.modal-content{
+    background-color: #FFBF00;
+    opacity: .80;
+    padding: 0 20px;
+    box-shadow: 4px 4px 4px #94712f;
+}
+.jumbotron-content{
+    opacity: .85;
+    padding: 0 20px;
+}
+
+.container-fluid{
+    opacity: .85;
+    padding: 0 20px;
+}
+/*PROPIEDADES DE LA IMAGEN DE USUARIO*/
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+.user-img img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 3px 3px 3px #94712f;
+    border-radius: 50%;
+}
+/*PROPIEDADES DE LOS INPUT*/
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border: 0px;
+    padding-left:38px ;
+    border-radius: 10px;
+}
+/*LIBRERIA DE ICONOS*/
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top: 35px;
+}
+/*ICONOS*/
+.form-group#user-group::before{
+    content: "\f007";
+}
+.form-group#contraseña-group::before{
+    content: "\f023";
+}
+/*PROPIEDADES DEL BOTON*/
+.button{
+    width: 60%;
+    margin:10px 0 25px;
+}
+/*SEPARACION DEL TEXTO*/
+.forgot{
+    padding: 5px 0 5px;
+}
+.forgot a{
+    color: rgb(18, 66, 5);
+}
+/*.btn{
+    color: rgb(249, 252, 249);
+    background-color: rgb(64, 65, 64);
+}*/
+.form-group#select-group::before{
+    font-size: 20px;
+}
+  #Titulo
+  {
+      font-size: 25px;
+      color: #FFBF00;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+#cont{
+    align-items: center;
+    justify-content: center;
+    /*width: 140%;
+    margin-left: -20%;*/
+}
+
+#pie{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  /********************************************************************/

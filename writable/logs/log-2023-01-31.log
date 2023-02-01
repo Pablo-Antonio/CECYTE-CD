@@ -1,0 +1,220 @@
+CRITICAL - 2023-01-31 01:48:24 --> Invalid file: ".php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('ROOTPATH\\public', [], true)
+ 3 APPPATH\Controllers\IndexController.php(9): view('ROOTPATH\\public')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndexController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-31 01:58:04 --> Undefined variable $BASE_MEDIA
+in APPPATH\Views\index.php on line 7.
+ 1 APPPATH\Views\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $BASE_MEDIA', 'APPPATH\\Views\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\IndexController.php(9): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndexController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-31 01:59:47 --> Undefined variable $BASE_MEDIA
+in APPPATH\Views\index.php on line 7.
+ 1 APPPATH\Views\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $BASE_MEDIA', 'APPPATH\\Views\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\IndexController.php(9): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\IndexController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IndexController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-31 16:46:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 ()
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 8 in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-024702_Inventario.php(38): CodeIgniter\Database\Forge->createTable('equipos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Inventario->up()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 16:50:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) NOT NULL DEFAULT 1,
+	CONSTRAINT `pk_equipos` PRIMARY KEY(`idEquipo`),
+	UNI...' at line 7 in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-024702_Inventario.php(39): CodeIgniter\Database\Forge->createTable('equipos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Inventario->up()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 16:51:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 (`folio`)
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 9 in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `e...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `e...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `e...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `e...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-024702_Inventario.php(39): CodeIgniter\Database\Forge->createTable('equipos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Inventario->up()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 18:07:15 --> mysqli_sql_exception: Unknown table 'cecyte-cd.prestamos' in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `pre...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `pre...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `pre...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `pre...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-170729_Prestamos.php(54): CodeIgniter\Database\Forge->dropTable('prestamos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Prestamos->down()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 18:08:26 --> mysqli_sql_exception: Unknown table 'cecyte-cd.prestamos' in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `pre...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `pre...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `pre...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `pre...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-170729_Prestamos.php(54): CodeIgniter\Database\Forge->dropTable('prestamos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Prestamos->down()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 18:08:28 --> mysqli_sql_exception: Unknown table 'cecyte-cd.prestamos' in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `pre...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `pre...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `pre...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `pre...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-170729_Prestamos.php(54): CodeIgniter\Database\Forge->dropTable('prestamos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Prestamos->down()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 18:08:29 --> mysqli_sql_exception: Unknown table 'cecyte-cd.prestamos' in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `pre...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `pre...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `pre...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `pre...')
+#4 C:\xampp\htdocs\CECYTE-CD\app\Database\Migrations\2023-01-31-170729_Prestamos.php(54): CodeIgniter\Database\Forge->dropTable('prestamos')
+#5 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(877): App\Database\Migrations\Prestamos->down()
+#6 C:\xampp\htdocs\CECYTE-CD\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\CECYTE-CD\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(2)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\CECYTE-CD\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\CECYTE-CD\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-31 21:50:28 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `eq...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `eq...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `eq...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `eq...', Array, false)
+#4 C:\xampp\htdocs\CECYTE-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CECYTE-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CECYTE-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CECYTE-CD\app\Controllers\InventarioController.php(62): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+#9 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+#10 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CECYTE-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CECYTE-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-31 21:50:28 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `equipos` (`folio`, `nombreEquipo`, `descripcionEquipo`, `fechaIngreso`) VALUES (:folio:, :nombreEquipo:, :descripcionEquipo:, :fechaIngreso:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\InventarioController.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-31 21:50:57 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `eq...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `eq...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `eq...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `eq...', Array, false)
+#4 C:\xampp\htdocs\CECYTE-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CECYTE-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CECYTE-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CECYTE-CD\app\Controllers\InventarioController.php(62): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+#9 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+#10 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CECYTE-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CECYTE-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-31 21:50:57 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `equipos` (`folio`, `nombreEquipo`, `descripcionEquipo`, `fechaIngreso`) VALUES (:folio:, :nombreEquipo:, :descripcionEquipo:, :fechaIngreso:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\InventarioController.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-31 21:52:30 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CECYTE-CD\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `eq...', 0)
+#1 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `eq...')
+#2 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `eq...')
+#3 C:\xampp\htdocs\CECYTE-CD\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `eq...', Array, false)
+#4 C:\xampp\htdocs\CECYTE-CD\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CECYTE-CD\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CECYTE-CD\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CECYTE-CD\app\Controllers\InventarioController.php(62): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+#9 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+#10 C:\xampp\htdocs\CECYTE-CD\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CECYTE-CD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CECYTE-CD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-01-31 21:52:30 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `equipos` (`folio`, `nombreEquipo`, `descripcionEquipo`, `fechaIngreso`) VALUES (:folio:, :nombreEquipo:, :descripcionEquipo:, :fechaIngreso:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\InventarioController.php(62): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\InventarioController->new('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InventarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
